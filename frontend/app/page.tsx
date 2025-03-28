@@ -55,14 +55,6 @@ export default function LandingPage() {
                         </Link>
                     </nav>
                     <MobileNav />
-                    <div className="hidden md:flex gap-4">
-                        <Button className="border-slate-700 text-slate-300 hover:text-white hover:bg-slate-800">
-                            Log in
-                        </Button>
-                        <Button className="bg-blue-600 hover:bg-blue-700 text-white">
-                            Sign up
-                        </Button>
-                    </div>
                 </div>
             </header>
             <main className="flex-1">
@@ -397,16 +389,6 @@ function MobileNav() {
                             Testimonials
                         </Link>
                     </nav>
-                    <div className="mt-6 flex flex-col gap-4">
-                        <Button
-                            className="w-full border-slate-700 text-slate-300 hover:text-white hover:bg-slate-800"
-                        >
-                            Log in
-                        </Button>
-                        <Button className="w-full bg-blue-600 hover:bg-blue-700 text-white">
-                            Sign up
-                        </Button>
-                    </div>
                 </div>
             )}
         </div>

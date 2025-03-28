@@ -170,61 +170,6 @@ export function DataCharts() {
                     </CardContent>
                 </Card>
             </TabsContent>
-            <TabsContent value="variants" className="mt-4">
-                <Card className="bg-slate-900 border-slate-800">
-                    <CardHeader>
-                        <CardTitle className="text-white">
-                            Variant Distribution
-                        </CardTitle>
-                        <CardDescription className="text-slate-400">
-                            Current distribution of COVID-19 variants worldwide
-                        </CardDescription>
-                    </CardHeader>
-                    <CardContent>
-                        <div className="h-[300px] w-full">
-                            <ResponsiveContainer width="100%" height="100%">
-                                <BarChart
-                                    data={variantData}
-                                    layout="vertical"
-                                    margin={{
-                                        top: 5,
-                                        right: 30,
-                                        left: 20,
-                                        bottom: 5,
-                                    }}
-                                >
-                                    <CartesianGrid
-                                        strokeDasharray="3 3"
-                                        stroke="#334155"
-                                    />
-                                    <XAxis type="number" stroke="#94a3b8" />
-                                    <YAxis
-                                        dataKey="name"
-                                        type="category"
-                                        stroke="#94a3b8"
-                                    />
-                                    <Tooltip
-                                        contentStyle={{
-                                            backgroundColor: "#0f172a",
-                                            borderColor: "#334155",
-                                            color: "#f8fafc",
-                                        }}
-                                        formatter={(value) => [
-                                            `${value}%`,
-                                            "Percentage",
-                                        ]}
-                                    />
-                                    <Bar
-                                        dataKey="percentage"
-                                        fill="#3b82f6"
-                                        name="Percentage"
-                                    />
-                                </BarChart>
-                            </ResponsiveContainer>
-                        </div>
-                    </CardContent>
-                </Card>
-            </TabsContent>
         </Tabs>
     );
 }
