@@ -1,0 +1,18 @@
+# herald/.gitignore
+# Node.js/Frontend
+/frontend/node_modules/
+/frontend/.next/
+/frontend/out/
+/frontend/build/
+
+# Python/Backend
+/backend/__pycache__/
+/backend/*.pyc
+/backend/*.pyo
+/backend/*.pyd
+/backend/.venv/
+/backend/env/
+
+# General
+*.log
+.DS_Store
